@@ -2,8 +2,8 @@
 module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
-  bucket = "bucket_${var.prefix}_ruhua"
-  acl    = "public-read"
+  bucket = "bucket-${var.prefix}-ruhua-train"
+  acl    = "private"
 
   versioning = {
     enabled = true
